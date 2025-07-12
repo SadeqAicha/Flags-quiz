@@ -1,0 +1,151 @@
+@font-face {
+    font-family:'Tajawal' ;
+    src: url(fonts/Arabic/Tajawal-Regular.ttf);
+}
+*{
+    font-family: 'Tajawal';
+    font-weight: bold !important;
+    border: none;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-color: rgb(203, 211, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*-----------------------------------( Tous les button )-----------------------------------*/
+button{
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(139, 177, 106);
+}
+/*----------------------------- ( Nombre de flags input )--------------------------------*/
+
+#conteneur{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flags_num_container{
+    display: grid;
+    place-items: center;
+
+}
+input{
+    width:170px;
+    height: 30px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#go{
+    width: 100%;
+    padding: 20px;
+}
+/*-----------------------------------( La barre des buttons )------------------------------------*/
+
+a{text-decoration: none;}
+button ,#question_num{
+    border-radius: 50px;
+    background: #333;
+    color: #fff;
+    padding: 13px;
+    font-size: 13px;
+}
+#control_barre{
+    width:70vw;
+    display: flex; gap: 5px;
+    justify-content: center;
+    margin: 2%;
+}
+#control_barre button{
+    font-size: clamp(0.7rem,1vw,1.5rem);
+}
+#back{
+    width: 15%; 
+}
+#question_num{
+    width: 85%;
+    font-size: 15px;
+} 
+
+/*----------------------------- ( L'image de flag et les choix )--------------------------------*/
+#game_conteneur{
+    width: 95%;
+    max-width: 450px;
+}
+.img_next {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+}
+#green{
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+    margin: 0 0;
+}
+.flag_img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 2;
+}
+#next{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    width: 30%;
+    font-size: 15px;
+    opacity: 45%;
+    z-index: 3;
+}
+#next:hover{
+    opacity: 100%;
+}
+.option{
+    display: block;
+    padding: 20px;
+    margin-top: 10px ;
+    width: 100%;
+    min-width: 200px; max-width: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.option:hover{
+    color: rgb(37, 88, 67);
+}
+
+/*-------------------------------------- ( Score )-----------------------------------------*/
+
+#score_page{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff65;
+    width: 70%;
+    padding: 50px 0;
+    border-radius: 40px;
+}
+#score_page button{
+    width: 200px;
+    margin: 5px;
+}
+#score_page p{
+    font-size: clamp(2rem,4vw,8rem);
+    font-weight: bold;
+}
