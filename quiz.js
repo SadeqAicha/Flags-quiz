@@ -130,7 +130,7 @@ next.onclick=function(){
         conteneur.style.display='none';
         score_page.innerHTML+=`
             <p>نتيجتك : ${score}/${Myflag.length} </p>
-            <a href="quiz.html"><button>العب مجددا</button></a>`;
+            <a href="index.html"><button>العب مجددا</button></a>`;
         score_page.style.display='flex';
     }
 }
